@@ -38,7 +38,7 @@ jobs:
         uses: sebastianpopp/ftp-action@v2.0.0
         with:
           # FTP host
-          host: 
+          host: ftp.abhighschool.in
           # FTP user
           user: ${{ secrets.ftp_user }}
           # FTP password
