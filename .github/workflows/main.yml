@@ -32,7 +32,7 @@ jobs:
         with:
           server: ftp.abhighschool.in
           username: akshay.learnlinux@abhighschool.in
-          password: ${{ secrets.FTP_PASSWORD }}
+          password: PuneCom1
           local-dir: ./public_html
           log-level: verbose
 
