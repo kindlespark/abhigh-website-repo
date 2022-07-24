@@ -39,7 +39,9 @@ jobs:
           # ftp password
           password: PuneCom1
           # Path to upload to on the server. Must end with trailing slash /
-          server-dir: ./public_html
+          server-dir: ./public_html/
+          # Path to upload from local machine
+          local-dir: ./public_html/
           # How verbose should the information be - minimal, standard, or verbose
           log-level: verbose
 
