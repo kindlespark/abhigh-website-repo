@@ -40,9 +40,9 @@ jobs:
           # FTP host
           host: ftp.abhighschool.in
           # FTP user
-          user: ${{ secrets.ftp_user }}
+          user: ${{ secrets.FTP_USER }}
           # FTP password
-          password: ${{ secrets.ftp_password }}
+          password: ${{ secrets.FTP_PASSWORD }}
           # Force SSL encryption
           forceSsl: false
           # Local directory
