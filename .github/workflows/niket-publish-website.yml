@@ -1,13 +1,11 @@
 # This is a basic workflow to help you get started with Actions
 
-name: niket-publish-website
+name: Niket-publish-website-workflow
 
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
-  pull_request:
     branches: [ "main" ]
 
   # Allows you to run this workflow manually from the Actions tab
@@ -27,4 +25,22 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Hello, from Niket!
+        run: echo Hello, Niket!
+
+      - name: FTP Deploy
+        # You may pin to the exact commit or the version.
+        # uses: SamKirkland/FTP-Deploy-Action@d0aa83872616587eb552bc831bb9166b3f9c5ad5
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          # ftp server
+          server: ftp.abhighschool.in
+          # ftp username
+          username: akshay.learnlinux@abhighschool.in
+          # ftp password
+          password: PuneCom1
+          # Path to upload to on the server. Must end with trailing slash /
+          server-dir: ./public_html
+          # How verbose should the information be - minimal, standard, or verbose
+          log-level: verbose
+
+
