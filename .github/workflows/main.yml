@@ -33,7 +33,7 @@ jobs:
           server: ftp.abhighschool.in
           username: akshay.learnlinux@abhighschool.in
           password: PuneCom1
-          local-dir: ./public_html
+          local-dir: ./public_html/
           log-level: verbose
 
 
